@@ -1,10 +1,10 @@
-/*selector universal*/
+/*selector universal
 * {
 	margin: 10px;
 	padding: 0;
 	border: 1px solid red;	
 }
-/*selector de etiqueta*/
+/*selector de etiqueta
 header {
 	background-color: blue;
 }
@@ -12,11 +12,11 @@ header {
 section {
 	background-color: purple;
 }
-/*selector descentende*/
+/*selector descentende
 article h3 {
 	color: green;
 }
-/*selectores de clase*/
+/*selectores de clase
 .title-a {
 	background-color: yellow;
 }
@@ -35,4 +35,235 @@ article h3 {
 
 #guitarras {
 	border: 3px solid brown;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Allerta|Montserrat:300,400,700');
+* {
+	font-family: 'Allerta', sans-serif;
+	width: 
+}
+
+body {
+
+	padding:0px;
+	margin: 0px;
+}
+
+.titulo {
+	font-size: 70px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0px;
+	margin-top: 70px;
+}
+
+.titulo span {
+	text-decoration: underline;
+}
+
+.titulo-a {
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+.titulo-2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-b {
+	font-size: 50px;
+}
+
+.guitarras {
+	color: #1F313C;
+}
+
+.guitarras h2 {
+	font-size: 35px;
+}
+
+.portada {
+	background-image: url('../images/background.png');
+	background-size: cover;
+	color: white;
+	padding: 20px;
+}
+
+.portada button {
+	margin-bottom: 70px;
+}
+
+.menu {
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.logotipo {
+	display: inline-block;
+	margin: 0;
+}
+
+.contenedor {
+	margin: auto;
+	width: 800px;
+	position: relative;
+}
+
+.right {
+	float: right;
+	position: relative;
+	top: -127px;
+}
+
+.left {
+	float: left;
+	position: relative;
+	top: 80px;
+}
+
+.guitarra-1 {
+	padding: 10px;
+	margin-bottom: 10px;
+	/*overflow: hidden;*/
+	border:1px solid  #1F313C;
+	    border-radius: 5px;
+}
+
+.guitarra-1 ol {
+	padding: 0;
+}
+
+.guitarra-2 ol {
+	padding: 0;
+}
+
+.guitarra-2 {
+		padding: 10px;
+	margin-bottom: 10px;
+	/*overflow: hidden;*/
+	border:1px solid  #1F313C;
+	    border-radius: 5px;
+}
+
+.contenedor-guitarra-a {
+	margin-right: 370px;
+	padding-left: 20px;
+	padding: 
+}
+.contenedor-guitarra-b {
+	margin-left: 370px;
+	position: relative;
+	bottom:80px;
+}
+
+button, .boton {
+	border-radius: 12px;
+	background-color: #fd324e;
+	color: white;
+	border: none;
+	font-size: 18px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	padding: 8px 10px;
+	text-decoration: none;
+}
+
+.footer {
+	background-color: #273B47;
+	margin-top: 20px;
+}
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;	
+	align-items: center;
+}
+
+.contacto img {
+	display: block;
+}
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white ;
+	padding: 50px 10px;
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	margin-right: 15px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.interes label {
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+
+.sexo {
+	margin-top: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background-color: #273B47;
+	color: white;
+	padding: 10px;
+}
+
+td {
+	padding: 20px;
+}
+table, td, th {
+	border: 1px solid #273B47;
+	border-collapse: collapse;
+}
+
+/*'&compfn;';*/
+
+.menu li:before {
+	content: '*';
+	font-size: 50px;
+	line-height: 20px;
+	color: white;
 }

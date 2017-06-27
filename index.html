@@ -6,43 +6,98 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header id="header"><!-- hedaer -->
-		<figure><!-- logotipo -->
+
+	<section id="portada" class="portada"><!--portada-->
+		<header id="header" class="header contenedor"><!-- hedaer -->
+		<figure class="logotipo"><!-- logotipo -->
 			<img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
 		</figure>
-		<nav><!-- menu -->
+		<nav class="menu"><!-- menu -->
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="precios.html">Precios</a></li>
-				<li><a href="#guitarras">Guitarras</a></li>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="precios.html"> Precios</a></li>
+				<li><a href="#guitarras"> Guitarras</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section id="portada"><!--portada-->
-		<h1>Guitarras Invisibles</h1><!-- titulo -->
-		<h3 class="title-a">Se la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-		<button>Conoce más</button><!-- boton -->
+		<div class="contenedor"> 
+			<h1 class="titulo">Guitarras <span>Invie</span>sibles</h1><!-- titulo -->
+			<h3 class="title-a">Se la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+			<a class="boton" href="#guitarras">Conoce más</a><!-- boton -->
+		</div>
 	</section>
-	<section id="guitarras"><!-- guitarras -->
-		<h2>Nuestras guitarras</h2><!-- titulo -->
-		<article>
-			<img src="images/invie-acustica.png" width="200" alt="Guitarra Invie classic">
-			<h3 class="title-b">Invie Acustica</h3>
-			<ol>
-				<li>Estilo vintage</li>
-				<li>Madera Pura</li>
-				<li>Incluye estuche invisible de aluminio</li>
-			</ol>
+	<section id="guitarras" class="guitarras contenedor"><!-- guitarras -->
+		<h2 class="titulo-2">Nuestras guitarras</h2><!-- titulo -->
+		<article class="guitarra-1">
+			<img class="right" src="images/invie-acustica.png" width="350" alt="Guitarra Invie classic">
+			<div class="contenedor-guitarra-a">
+				<h3 class="titulo-b">Invie Acustica</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Madera Pura</li>
+					<li>Incluye estuche invisible de aluminio</li>
+				</ol>
+			</div>
 		</article><!-- guitarra 1--> 
-		<article>
-			<img src="images/invie-classic.png" width="200" alt="Guitarra Clasica">
-			<h3 class="title-b">Invie Acustica</h3>
-			<ol>
-				<li>Estilo Vintage</li>
-				<li>Liviana</li>
-				<li>Inicia tu camino como rockstar</li>
-			</ol>
+		<article class="guitarra-2">
+			<img class="left" src="images/invie-classic.png" width="350" alt="Guitarra Clasica">
+			<div class="contenedor-guitarra-b">
+				<h3 class="titulo-b">Invie Acustica</h3>
+				<ol>
+					<li>Estilo Vintage</li>
+					<li>Liviana</li>
+					<li>Inicia tu camino como rockstar</li>
+				</ol>
+			</div>
 		</article><!-- guitarra 2--> 
 	</section>
+	<footer class="footer">
+	<div class="contenedor">
+		<div class="contacto">
+			<img src="images/invie-white.png" alt="logotipo blanco">
+			<a href="tel:*50256301380"><strong>Telefono</strong> <span>56301380</span></a>
+			<a href="mailto:lfflorian4@gmail.com"><strong>Correo</strong><span>lfflorian4@gmail.com</span></a>
+		</div>
+		<div class="formulario">
+			<form action="" class="formulario">
+			<div class="col1">
+				<label for="nombre">Nombre: </label>
+				<input type="text" class="nombre" required id="nombre" name="nombre">
+				<label for="correo">Correo: </label>
+				<input type="email" class="email" required="" id="correo" name="correo">
+				<div class="sexo">
+					<label for="mujer">
+						<input type="radio" id="mujer" name="sexo" value="mujer"> Mujer 
+					</label>
+					<label for="hombre">
+						<input type="radio" id="hombre" name="sexo" value="hombre"> Hombre 
+					</label>
+				</div>
+				<div class="interes">
+					<label for="cotizacion">
+						<input type="checkbox" id="cotizacion" name="interes" value="cotizacion"> Cotizacion 
+					</label>
+					<label for="reclamos">
+						<input type="checkbox" id="reclamos" name="interes" value="reclamos"> reclamos 
+					</label>
+					<label for="comentario">
+						<input type="checkbox" id="comentario" name="interes" value="comentario"> comentario 
+					</label>
+					<label for="otros">
+						<input type="checkbox" id="otros" name="interes" value="otros"> otros 
+					</label>
+				</div>
+			</div>
+			<div class="col2">
+				<div>
+					<label for="comentarios">comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input type="submit" value="Enviar" class="boton"/>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	</footer>
 </body>
 </html>
