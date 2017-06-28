@@ -12,7 +12,7 @@
 	<section id="portada" class="portada"><!--portada-->
 		<header id="header" class="header contenedor"><!-- hedaer -->
 		<figure class="logotipo"><!-- logotipo -->
-			<img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
+			<img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png" width="186" height="60" alt="Invie logotipo">
 		</figure>
 		<nav class="menu"><!-- menu -->
 			<ul>
@@ -28,10 +28,16 @@
 			<a class="boton" href="#guitarras">Conoce más</a><!-- boton -->
 		</div>
 	</section>
+
+	
+	<video src="video/320x240.ogg"></video>
 	<section id="guitarras" class="guitarras contenedor"><!-- guitarras -->
 		<h2 class="titulo-2">Nuestras guitarras</h2><!-- titulo -->
+		<div class="video-contenedor">
+		<iframe class="video-directo" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+	</div>
 		<article class="guitarra-1">
-			<img class="right" src="images/invie-acustica.png" width="350" alt="Guitarra Invie classic">
+			<img class="right" data-src="images/invie-acustica.png" width="350" alt="Guitarra Invie classic">
 			<div class="contenedor-guitarra-a">
 				<h3 class="titulo-b">Invie Acustica</h3>
 				<ol>
@@ -42,7 +48,7 @@
 			</div>
 		</article><!-- guitarra 1--> 
 		<article class="guitarra-2">
-			<img class="left" src="images/invie-classic.png" width="350" alt="Guitarra Clasica">
+			<img class="left" data-src="images/invie-classic.png" width="350" alt="Guitarra Clasica">
 			<div class="contenedor-guitarra-b">
 				<h3 class="titulo-b">Invie Acustica</h3>
 				<ol>
@@ -56,7 +62,7 @@
 	<footer class="footer">
 	<div class="contenedor">
 		<div class="contacto">
-			<img src="images/invie-white.png" alt="logotipo blanco">
+			<img data-src="images/invie-white.png" alt="logotipo blanco">
 			<a href="tel:*50256301380"><strong>Telefono</strong> <span>56301380</span></a>
 			<a href="mailto:lfflorian4@gmail.com"><strong>Correo</strong><span>lfflorian4@gmail.com</span></a>
 		</div>
@@ -101,6 +107,13 @@
 		</div>
 	</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+	<script>
+		var bLazy = new Blazy({
+			selector: 'img'
+		});
+	</script>
 </body>
 </html>
 <!-- 
