@@ -269,6 +269,19 @@ table, td, th {
 	color: white;
 }
 
+.burguer-button {
+	width: 40px;
+	border-radius: 50%;
+	line-height: 40px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	background-color: #fff;
+
+	position: absolute;
+	left
+}
+
 /* Media Querie*/
 
 @media screen and (max-width: 800px) {
